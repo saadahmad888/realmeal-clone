@@ -1,16 +1,22 @@
 /* =======================================================================
-Sticky Nav
+    Sticky Nav
 ========================================================================== */
+window.addEventListener('scroll', function() {
+  myFunction();
+});
 
-window.onscroll = function () { myFunction() };
 var navbar = document.getElementById("main-nav");
+
 function myFunction() {
-  if (window.pageYOffset >= 100) {
-    navbar.classList.add("nav-colored")
+  if (window.scrollY >= 100) {
+    navbar.classList.add("colored");
   } else {
-    navbar.classList.remove("nav-colored");
+    navbar.classList.remove("colored");
   }
 }
+
+
+
 
 (function () {
   'use strict';
@@ -31,11 +37,14 @@ function myFunction() {
 })();
 
 
-$('#meal-slider').owlCarousel({
+$('#top-pickes-slider').owlCarousel({
   loop:true,
   margin:10,
   nav:false,
-  dots: true,
+  dots: false,
+  autoplay:true,
+  autoplayTimeout:4000,
+  autoplayHoverPause:true,
   responsive:{
       0:{
           items:1
@@ -44,29 +53,24 @@ $('#meal-slider').owlCarousel({
           items:2
       },
       1000:{
-          items:3
+          items:4
       }
     }
 })
 
-$('#plan-slider').owlCarousel({
+$('#customer-reviews-slider').owlCarousel({
   loop: true,
-  margin: 10,
+  nav:true,
+  dots: false,
   responsive: {
     0: {
       items: 1,
-      dots: true,
-      nav: false,
     },
     600: {
-      items: 2,
-      dots: true,
-      nav: false,
+      items: 1,
     },
     1000: {
-      items: 3,
-      dots: false,
-      nav: true,
+      items: 1,
     }
   }
 })
