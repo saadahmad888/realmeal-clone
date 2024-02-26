@@ -1,0 +1,367 @@
+@import url("./variables.css");
+
+/* font-family: 'Plus Jakarta Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* font-family: "Ubuntu", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s all ease;
+}
+
+
+
+/* =======================================================================
+    Buttons CSS
+========================================================================== */
+
+
+
+/* =======================================================================
+    General Common CSS
+========================================================================== */
+.section-heading{
+    position: relative;
+    margin-bottom: 50px;
+}
+.section-heading h2{
+    color: var(--black);
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.section-heading p{
+    color: var(--heading-text);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+
+/* =======================================================================
+    Navbar CSS
+========================================================================== */
+.main-nav{
+    padding: 15px 0;
+}
+.main-nav .nav-item{
+    padding: 0px 10px;
+}
+.main-nav .nav-link{
+    color: var(--orange);
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s all ease;
+}
+.main-nav .nav-link.active{
+    color: var(--orange);
+}
+.main-nav .nav-link:hover{
+    transform: translate(-5px,-5px);
+}
+
+
+
+
+/* =======================================================================
+    Main Banner CSS
+========================================================================== */
+.main-banner-sec{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://d9hhrg4mnvzow.cloudfront.net/get.rightbite.com/athletemealplan/eb2b8556-banner3-smaller_10000002gf14j000096000.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 100px 0 80px 0;
+}
+.main-banner-sec .heading{
+    margin-bottom: 30px;
+}
+.main-banner-sec .heading h1{
+    text-align: center;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 55px;
+}
+.main-banner-sec .heading h2{
+    text-align: center;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 35px;
+}
+.main-banner-sec .desc{
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+.main-banner-sec .desc .highlite{
+    background-color: var(--white);
+    color: var(--orange);
+    font-weight: 600;
+    padding: 0 5px;
+}
+.main-banner-sec .text{
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+.btn-black{
+    background-color: var(--black);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 12px 30px;
+    border-radius: 10px;
+    color: var(--white);
+}
+
+/* =======================================================================
+    Expertly Section CSS
+========================================================================== */
+.expertly-sec{
+    background-color: #9fd9e7;
+    padding: 30px 0;
+}
+.expertly-sec .heading h2{
+    color: var(--white);
+    font-size: 60px;
+    margin-bottom: 0;
+    line-height: 75px;
+    font-weight: 500;
+}
+.expertly-sec .img-box img{
+    width: 100%;
+}
+
+
+
+
+
+/* =======================================================================
+    Build for you section CSS
+========================================================================== */
+.built-for-you-sec{
+    padding: 70px 0 50px 0;
+}
+.built-for-you-sec .item-box{
+    text-align: center;
+}
+.built-for-you-sec .item-box .name-box p{
+    color: var(--orange);
+    font-weight: 500;
+    font-size: 14px;
+    min-height: 40px;
+}
+.built-for-you-sec .item-box .img-box img{
+    width: 100%;
+    /* height: 150px; */
+    border-radius: 5px;
+}
+.built-for-you-sec .item-box .text-box{
+    position: relative;
+}
+.built-for-you-sec .item-box .text-box p{
+    color: var(--orange);
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+    bottom: -265px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.built-for-you-sec .title{
+    background-color: var(--sky);
+    padding: 10px 20px;
+    border-radius: 100px;
+    margin-left: auto;
+    width: fit-content;
+    width: 200px;
+    text-align: center;
+
+}
+.built-for-you-sec .title p{
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.built-for-you-sec .btn-black{
+    font-size: 14px;
+}
+
+
+
+/* =======================================================================
+    How it works section CSS
+========================================================================== */
+.how-it-works-sec{
+    background-color: var(--orange);
+    padding: 70px 0 40px 0;
+}
+.how-it-works-sec .item-box{
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+.how-it-works-sec .item-box .number{
+    background-color: var(--white);
+    color: var(--orange);
+    text-align: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 100px;
+    align-items: center;
+    vertical-align: middle;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 3.5px;
+}
+.how-it-works-sec .item-box .inner-item-box{
+    border: 1px solid var(--white);
+    border-radius: 15px;
+    padding: 20px 30px;
+}
+.how-it-works-sec .item-box .inner-item-box img{
+    width: 107px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center center;
+}
+.how-it-works-sec .item-box .inner-item-box .text{
+    color: var(--white);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+
+
+/* =======================================================================
+    App Section CSS
+========================================================================== */
+.app-sec{
+    position: relative;
+    padding: 70px 0 40px 0;
+    background-color: var(--sky);
+}
+.app-sec .img-box{
+    position: relative;
+}
+.app-sec .img-box .img-1{
+    position: absolute;
+    left: 100px;
+    bottom: 50px;
+}
+.app-sec .img-box .img-2{
+    position: absolute;
+    left: 200px;
+    top: -265px;
+}
+.app-sec .img-box .img-3{
+    position: absolute;
+    left: 437px;
+    bottom: -60px;
+}
+.app-sec .img-box .img-4{
+    position: absolute;
+    left: 0px;
+    top: 12px;
+}
+.app-sec .content-box .title{
+    font-size: 35px;
+    color: var(--black);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.app-sec .content-box .desc{
+    color: var(--heading-text);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+/* =======================================================================
+    Testimonal Sec CSS
+========================================================================== */
+.testimonals-sec{
+    padding: 50px 0 20px 0;
+}
+.testmonial-box{
+    margin-bottom: 30px;
+}
+.testmonial-box .name{
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.testmonial-box .desc{
+    color: var(--black);
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    min-height: 130px;
+}
+.testmonial-box .rating-box{
+    margin-bottom: 20px;
+}
+.testmonial-box .rating-box i{
+    font-weight: bold;
+    color: #FFD800;
+}
+/* =======================================================================
+    Custom ScrollBar CSS
+========================================================================== */
+#style-2::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar
+{
+	width: 7px;
+    height: 4px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: var(--orange);
+}
+
+
+
+
+/* =======================================================================
+    Footer CSS
+========================================================================== */
+footer{
+    padding: 20px 0;
+}
+footer .text p,
+footer .text a{
+    color: var(--orange);
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+footer .logo-box img{
+    height: 40px;
+}

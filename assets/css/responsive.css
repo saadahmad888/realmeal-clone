@@ -1,0 +1,67 @@
+@media only screen and (max-width: 1200px){
+    
+}
+@media only screen and (max-width: 992px){
+    
+}
+@media only screen and (max-width: 768px){
+    .built-for-you-sec .title{
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .built-for-you-sec .item-box .name-box p{
+        font-size: 20px;
+    }
+    .built-for-you-sec .item-box .text-box p{
+        font-size: 35px;
+        bottom: -340px;
+    }
+    .app-sec .img-box{
+        height: 370px;
+    }
+    .app-sec .img-box .img-1{
+        left: 0;
+        top: -35px;
+        bottom: unset;
+    }
+    .app-sec .img-box .img-4{
+        width: 180px;
+        top: unset;
+        bottom: 30px;
+    }
+    .app-sec .img-box .img-2{
+        top: -110px;
+        left: 80px;
+    }
+    .app-sec .img-box .img-3{
+        left: 320px;
+        bottom: 43%;
+        width: 115px;
+    }
+    footer .logo-box img{
+        margin-bottom: 20px;
+    }
+    .main-banner-sec .heading h1{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .main-banner-sec .heading h2{
+        font-size: 30px;
+    }
+    .main-banner-sec .desc{
+        font-size: 22px;
+    }
+    .expertly-sec .heading h2{
+        font-size: 43px;
+        line-height: 57px;
+    }
+    .section-heading h2{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 576px){
+    
+}
+@media only screen and (max-width: 400px){
+    
+}
