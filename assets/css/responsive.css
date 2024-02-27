@@ -9,6 +9,10 @@
         transform: translateY(0px);
         z-index: 1;
     }
+    .top-picks-item .tag{
+        transform: translateX(0px);
+        opacity: 1;
+    }
     
 }
 @media only screen and (max-width: 576px){

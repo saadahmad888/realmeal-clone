@@ -40,20 +40,25 @@ function myFunction() {
 $('#top-pickes-slider').owlCarousel({
   loop:true,
   margin:10,
-  nav:false,
-  dots: false,
   autoplay:true,
   autoplayTimeout:4000,
   autoplayHoverPause:true,
+  navText : ["<i class='fal fa-long-arrow-left'></i>","<i class='fal fa-long-arrow-right'></i>"],
   responsive:{
       0:{
-          items:1
+          items:1,
+          nav:false,
+          dots: true,
       },
       600:{
-          items:2
+          items:2,
+          nav:false,
+          dots: true,
       },
       1000:{
-          items:4
+          items:4,
+          nav:true,
+          dots: false,
       }
     }
 })

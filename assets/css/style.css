@@ -300,8 +300,86 @@ a {
 .top-picks-from-our-kitchen-sec{
     padding: 70px 0 40px 0;
 }
+.top-picks-item{
+    background-color: #1d6f401c;
+    border-radius: 10px;
+    position: relative;
+    padding: 40px 20px 20px 20px;
+}
+.top-picks-item .tag{
+    color: var(--black);
+    background-color: var(--green);
+    font-size: 14px;
+    font-weight: 700;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 4px 8px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform: translateX(-80px);
+    transition: 0.3s all ease;
+    opacity: 0;
+}
+.top-picks-item:hover .tag{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.top-picks-item img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    transition: 0.3s all ease;
+}
+.top-picks-item:hover img{
+    transform: scale(1.1);
+}
+.top-picks-item .title{
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0;
+    transition: 0.3s all ease;
+}
+.top-picks-item:hover .title{
+    letter-spacing: 1px;
+}
+#top-pickes-slider .owl-nav{
+    position: absolute;
+    top: -120px;
+    right: 0;
+}
+#top-pickes-slider .owl-nav button{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.3s all ease;
+}
+#top-pickes-slider .owl-nav button:hover{
+    background-color: var(--green);
+    color: var(--black);
+}
+#top-pickes-slider .owl-dot.active span,
+#top-pickes-slider .owl-dot:hover span{
+    background: var(--green);
+}
 
-.top-pickes-from-kitchen-item{
+
+
+
+
+
+
+
+
+
+
+
+
+/* .top-pickes-from-kitchen-item{
     border: 1px solid #80808029;
     border-radius: 20px;
 }
@@ -338,7 +416,7 @@ a {
     color: var(--black);
     font-weight: 600;
     font-size: 16px;
-}
+} */
 
 
 
