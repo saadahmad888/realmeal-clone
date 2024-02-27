@@ -163,7 +163,7 @@ a {
 .pick-your-meal-paln-item .content-box .price{
     color: var(--green);
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
 }
 .pick-your-meal-paln-item .content-box .desc {
     color: var(--black);
