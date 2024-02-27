@@ -118,24 +118,25 @@ $('#blog-slider').owlCarousel({
   }
 })
 
-$('#shop-slider').owlCarousel({
+$('#meal-plan-slider').owlCarousel({
   loop: true,
   margin: 10,
+  navText : ["<i class='fal fa-long-arrow-left'></i>","<i class='fal fa-long-arrow-right'></i>"],
   responsive: {
     0: {
       items: 1,
-      dots: true,
-      nav: false,
+      nav: true,
+      dots: false,
     },
     600: {
       items: 2,
-      dots: true,
       nav: false,
+      dots: true,
     },
     1000: {
       items: 4,
-      dots: false,
-      nav: true,
+      nav: false,
+      dots: true,
     }
   }
 })
