@@ -84,6 +84,21 @@ $('#customer-reviews-slider').owlCarousel({
   }
 })
 
+// Promotional Popup CSS
+$(document).ready(function() {
+  // Show the overlay and popup when the page loads
+  $("#overlay, #promoPopup").fadeIn();
+
+  // Close the popup when the close button is clicked
+  $(".close-btn").click(function() {
+    $("#overlay, #promoPopup").fadeOut();
+  });
+});
+
+
+
+
+
 $('#blog-slider').owlCarousel({
   loop: true,
   margin: 10,
