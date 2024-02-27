@@ -11,5 +11,76 @@
     
 }
 @media only screen and (max-width: 400px){
-    
+    .banner-sec{
+        height: 540px;
+    }
+    .banner-sec .heading{
+        font-size: 32px;
+    }
+    .banner-sec .desc{
+        font-size: 15px;
+    }
+    .banner-sec .btn-black,
+    .banner-sec .btn-white{
+        width: 100%;
+    }
+    .section-heading h2{
+        font-size: 28px;
+    }
+    .learn-more-about-sec .accordion-body{
+        width: 100%;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .learn-more-about-sec .accordion-button{
+        font-size: 14px;
+    }
+    .learn-more-about-sec .accordion-button.collapsed::after,
+    .learn-more-about-sec .accordion-button::after{
+        font-size: 20px;
+    }
+    .learn-more-about-sec .title{
+        font-size: 22px;
+        margin-top: 20px;
+    }
+    .input-group .btn-black{
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .learn-more-about-sec .input-group .form-control{
+        font-size: 14px;
+        height: 55px;
+    }
+    .consultaion-form .input-group{
+        margin-bottom: 30px;
+    }
+    .blog-item{
+        display: block;
+        margin: 30px;
+    }
+    .blog-item .img-box,
+    .blog-item .content-box{
+        width: 100%;
+    }
+    .blog-item .img-box,
+    .blog-item .img-box img{
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    #blog-slider .owl-nav{
+        display: block;
+        position: relative;
+    }
+    .main-footer{
+        border-radius: 0;
+    }
+
+    #customer-reviews-slider .owl-nav{
+        display: none;
+    }
+    #customer-reviews-slider .owl-dot.active span, 
+    #customer-reviews-slider .owl-dot:hover span{
+        background: var(--black);
+    }
 }

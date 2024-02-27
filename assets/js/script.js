@@ -60,40 +60,45 @@ $('#top-pickes-slider').owlCarousel({
 
 $('#customer-reviews-slider').owlCarousel({
   loop: true,
-  nav:true,
-  dots: false,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 1,
-    },
-    1000: {
-      items: 1,
-    }
-  }
-})
-
-$('#more-slider').owlCarousel({
-  loop: true,
-  margin: 10,
-  nav:false,
   responsive: {
     0: {
       items: 1,
       dots: true,
-      nav: false,
+      nav:false,
+    },
+    410: {
+      items: 1,
+      dots: true,
+      nav:false,
     },
     600: {
       items: 1,
-      dots: true,
-      nav: false,
+      dots: false,
+      nav: true,
     },
     1000: {
       items: 1,
       dots: false,
       nav: true,
+    }
+  }
+})
+
+$('#blog-slider').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav:true,
+  dots: false,
+  navText : ["<i class='fal fa-long-arrow-left'></i>","<i class='fal fa-long-arrow-right'></i>"],
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 2,
+    },
+    1000: {
+      items: 2,
     }
   }
 })
