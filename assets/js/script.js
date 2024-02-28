@@ -39,9 +39,10 @@ function myFunction() {
 
 $('#top-pickes-slider').owlCarousel({
   loop:true,
-  margin:10,
+  margin: 20,
+  stagePadding: 50,
   autoplay:true,
-  autoplayTimeout:4000,
+  autoplayTimeout:3000,
   autoplayHoverPause:true,
   navText : ["<i class='fal fa-long-arrow-left'></i>","<i class='fal fa-long-arrow-right'></i>"],
   responsive:{
@@ -65,26 +66,28 @@ $('#top-pickes-slider').owlCarousel({
 
 $('#customer-reviews-slider').owlCarousel({
   loop: true,
+  margin: 10,
+  nav: false,
+  dots: false,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  autoplayHoverPause: true,
+  autoHeight: true,
+  animateOut: 'fadeOut',
+  animateIn: 'fadeIn',
+  smartSpeed: 1000,
   responsive: {
     0: {
       items: 1,
-      dots: true,
-      nav:false,
     },
     410: {
-      items: 1,
-      dots: true,
-      nav:false,
+      items: 2,
     },
     600: {
-      items: 1,
-      dots: false,
-      nav: true,
+      items: 3,
     },
     1000: {
-      items: 1,
-      dots: false,
-      nav: true,
+      items: 4,
     }
   }
 })

@@ -497,8 +497,101 @@ a {
 ========================================================================== */
 .customer-reviews-sec{
     padding: 70px 0 40px 0;
+    background-color: var(--green);
 }
-.customer-reviews-sec .outer-box{
+.review-item{
+    background-color: var(--white);
+    border-radius: 15px;
+    padding: 20px 25px;
+    position: relative;
+}
+.review-item .quote-icon{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 80px;
+    color: var(--green);
+    opacity: 0.3;
+}
+.review-item .desc{
+    color: var(--black);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+.review-item .img-box{
+    margin-right: 7px;
+}
+.review-item .img-box img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 100px;
+}
+.review-item .content-box{
+    margin-left: 7px;
+}
+.review-item .content-box .name{
+    color: var(--black);
+    font-weight: 700;
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 130px;
+    margin-bottom: 0;
+}
+.review-item .content-box .rating{
+    margin-bottom: 0;
+}
+.review-item .content-box .rating i{
+    font-weight: bold;
+    color: #FDCC0D;
+}
+#customer-reviews-slider .owl-carousel .owl-item {
+    padding: 10px;
+}
+  
+#customer-reviews-slider .owl-carousel .item img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .customer-reviews-sec .outer-box{
     background-color: var(--green);
     position: relative;
     padding: 25px;
@@ -548,7 +641,7 @@ a {
 }
 #customer-reviews-slider .owl-nav button:hover{
     background-color: transparent;
-}
+} */
 
 /* =======================================================================
     Learn More Section CSS
@@ -653,7 +746,20 @@ a {
 .consultaion-sec{
     background-color: rgba(21, 21, 21, 0.7);
     padding: 70px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/consultaion-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
+.consultaion-sec .bg-set{
+    background-color: rgba(21, 21, 21, 0.7);
+    border-radius: 30px;
+    padding: 40px 40px;
+}
+
+
+
 .consultaion-form .input-group{
     background-color: transparent;
     margin-bottom: 70px;
