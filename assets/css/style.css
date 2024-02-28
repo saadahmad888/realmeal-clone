@@ -1328,3 +1328,145 @@ a {
 .blog-item.vertical .link:hover i{
     transform: rotate(-45deg);
 }
+
+
+/* =======================================================================
+    Blog Detail Page CSS
+========================================================================== */
+.blog-detail-sec{
+    padding: 100px 0;
+}
+.blog-detail-sec img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.blog-detail-sec .tops{
+    margin-right: 30px;
+}
+.blog-detail-sec .tops i{
+    color: var(--green);
+    font-size: 25px;
+    margin-right: 10px;
+}
+.blog-detail-sec .tops .text{
+    color: var(--black);
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 0;
+}
+.blog-detail-sec .social-box ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.blog-detail-sec .social-box ul li{
+    margin: 5px;
+}
+.blog-detail-sec .social-box ul li a img{
+    width: 30px;
+    height: auto;
+    border-radius: 0;
+}
+
+.blog-detail-sec .heading{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 30px;
+}
+.blog-detail-sec .title{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+.blog-detail-sec .text{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: var(--black);
+    margin-bottom: 30px;
+}
+
+
+
+
+/* =======================================================================
+    Contact Page CSS
+========================================================================== */
+.contact-main-sec{
+    padding: 100px 0;
+}
+.contact-main-sec .heading{
+    color: var(--black);
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contact-detail-item{
+    background-color: var(--white);
+    box-shadow: 0 0 10px rgba(187, 236, 218, 0.7);
+    border-radius: 15px;
+    border: 1px solid #ededed;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    transition: 0.3s all ease;
+}
+.contact-detail-item:hover{
+    background-color: var(--green);
+}
+.contact-detail-item .title{
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    transition: 0.3s all ease;
+}
+.contact-detail-item:hover .title{
+    color: var(--white);
+}
+.contact-detail-item .text{
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+    transition: 0.3s all ease;
+}
+.contact-detail-item:hover .text{
+    color: var(--black);
+}
+.contact-detail-item i{
+    color: var(--green);
+    font-size: 25px;
+    transition: 0.3s all ease;
+}
+.contact-detail-item:hover i{
+    color: var(--black);
+}
+
+.contact-form{
+    padding: 40px 0;
+}
+
+.contact-form .form-control{
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid var(--black);
+    min-height: 45px;
+}
+.contact-form .form-control:hover{
+    border-color: var(--green);
+}
+.contact-form .form-control:focus{
+    box-shadow: none;
+    border-color: var(--green);
+    outline: none;
+}
