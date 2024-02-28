@@ -33,20 +33,18 @@
         <header>
             <nav class="navbar navbar-expand-lg" id="main-nav">
                 <div class="container">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.html">
                         <img height="60px" src="https://www.realmeal.ae/assets/images/realmeal/realmeal-white.png"
                             alt="">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <!-- <span class="navbar-toggler-icon"></span> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navoffcanvas"
+                    aria-controls="navoffcanvas">
                         <i class="fal fa-align-left"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Meal Palns</a>
@@ -68,18 +66,141 @@
                                 <a class="nav-link" href="blogs.html">Blogs</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Let's Talk</a>
+                                <a class="nav-link" href="contact.html">Let's Talk</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="navoffcanvas" aria-labelledby="navoffcanvasLabel">
+                <div class="offcanvas-header pe-4 pt-4">
+                    <h5 class="offcanvas-title" id="navoffcanvasLabel">
+                        
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="">
+                        <div class="mb-4">
+                            <a href="index.html">
+                                <img height="60px" src="https://www.realmeal.ae/assets/images/realmeal/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="mobile-nav mb-5">
+                            <ul>
+                                <li>
+                                    <a href="index.html">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Meal Plans
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Catering
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="about.html">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="our-story.html">
+                                        Our Story
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="blogs.html">
+                                        Blogs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">
+                                        Let's Talk
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mobile-social-box">
+                            <ul>
+                                <li>
+                                    <a class="" href="https://www.facebook.com/realmealdxb">
+                                        <img src="https://www.realmeal.ae/assets/images/facebook.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="https://www.instagram.com/realmealdxb">
+                                        <img src="https://www.realmeal.ae/assets/images/instagram.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class=""
+                                        href="https://api.whatsapp.com/send?phone=971545377337&text=Would%20like%20to%20know%20more%20about%20meal%20plans">
+                                        <img src="https://www.realmeal.ae/assets/images/whatsapp.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="#">
+                                        <img src="https://www.realmeal.ae/assets/images/youtube.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
         <main>
+            <section class="sub-page-banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="page-title">
+                                About Us
+                            </h1>
+                            <div class="bread-crumbs">
+                                <a href="" class="prev">
+                                    Home
+                                </a>
+                                <span class="angle">
+                                    <i class="fal fa-long-arrow-right"></i>
+                                </span>
+                                <span class="current">
+                                    About Us
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="about-us-content-sec">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 offset-lg-2 col-12">
+                        <div class="col-lg-6 col-12">
+                            <div class="">
+                                <img src="https://www.realmeal.ae/assets/images/realmeal/real-meal-plans.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="section-heading">
+                                <h2>
+                                    About us
+                                </h2>
+                            </div>
+                            <div class="">
+                                <p class="text">
+                                    Welcome to real meal, your partner on the journey to a healthier, more vibrant you. We are a premier meal plan company based in the UAE, fueled by a team of expert chefs dedicated to crafting delicious and nutritious meals tailored to your wellness goals.
+                                </p>
+                                <p class="text">
+                                    At real meal, we believe that achieving your health and fitness aspirations begins with what you put on your plate. Our culinary team, comprised of seasoned experts, meticulously curates meals that not only tantalize your taste buds but also nourish your body. We understand that each person's journey is unique, and our mission is to provide a personalized and enjoyable path to success for every individual.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-8 offset-lg-2 col-12">
                             <div class="section-heading text-center">
                                 <h2>
                                     About us
@@ -99,11 +220,43 @@
                                     Real meal is more than just a meal plan company; it's a holistic approach to health and well-being. Join us in making your wellness goals a reality, one delicious and nutritious meal at a time. Your journey starts here, with real meal – where your goals become our mission.
                                 </p>
                             </div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+            <section class="about-us-content-sec bg-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-12 order-lg-1 order-2">
+                            <div class="section-heading">
+                                <h2>
+                                    About us
+                                </h2>
+                            </div>
+                            <div class="">
+                                <p class="text">
+                                    Our commitment extends beyond the kitchen; we aspire to empower every single person to achieve their goals. Whether you're looking to fuel your workouts, maintain a balanced lifestyle, or embark on a transformative wellness journey, real meal is here to support you.
+                                </p>
+                                <p class="text">
+                                    Real meal is more than just a meal plan company; it's a holistic approach to health and well-being. Join us in making your wellness goals a reality, one delicious and nutritious meal at a time. Your journey starts here, with real meal – where your goals become our mission.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12 order-lg-2 order-1">
+                            <section class="about-video-sec">
+                                <div class="container">
+                                    <div class="video-box">
+                                        <a href="">
+                                            <i class="fal fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="about-video-sec">
+            <!-- <section class="about-video-sec">
                 <div class="container">
                     <div class="video-box">
                         <a href="">
@@ -111,9 +264,9 @@
                         </a>
                     </div>
                 </div>
-            </section>
-            <section class="about-us-content-sec">
-                <div class="container">
+            </section> -->
+            <section class="about-us-content-sec with-img">
+                <div class="container bg-set">
                     <div class="row">
                         <div class="col-12">
                             <div class="section-heading text-center">
@@ -184,15 +337,13 @@
             </section>
             <section class="about-last-sec">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-12">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-12">
                             <p class="text">
                                 For every subscription to our monthly meal plans at real meal, your commitment to a healthier lifestyle also means a monthly meal donated to a needy child.
                             </p>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-3 offset-lg-3 col-6">
+                        <div class="col-lg-3 col-6">
                             <div class="">
                                 <img src="https://www.realmeal.ae/assets/images/realmeal/ShareTheMeal_Logo.png" alt="">
                             </div>
@@ -209,8 +360,8 @@
         <footer>
             <section class="main-footer">
                 <div class="container-fluid px-4">
-                    <div class="row">
-                        <div class="col-12">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-12">
                             <a href="">
                                 <img height="80px" class="mb-4"
                                     src="https://www.realmeal.ae/assets/images/realmeal/realmeal-white.png" alt="">
@@ -219,6 +370,25 @@
                                 Our meal plans are packed with goodness and love crafted by our top industry chefs,
                                 customized for you. Every moment deserves a real meal.
                             </p>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="learn-more-about-sec p-0 m-0">
+                                <p class="title text-white">
+                                    Join the real meal community
+                                </p>
+                                <p class="desc text-white">
+                                    New product launches, real meal news and exclusive promotions directly to your
+                                    inbox.
+                                </p>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Enter Your Email"
+                                        aria-label="Enter Your Email" aria-describedby="basic-addon2">
+                                    <span class="input-group-text" id="basic-addon2">
+                                        <button class="btn btn-black">Submit <i
+                                                class="fal fa-paper-plane"></i></button>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <hr style="margin-bottom: 60px;">

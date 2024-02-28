@@ -277,7 +277,14 @@ a {
 #meal-plan-slider .owl-nav button{
     font-size: 30px;
 }
-
+#meal-plan-slider .owl-nav .owl-prev{
+    position: relative;
+    left: -20px;
+}
+#meal-plan-slider .owl-nav .owl-next{
+    position: relative;
+    right: -20px;
+}
 
 
 
@@ -694,7 +701,7 @@ a {
 }
 .learn-more-about-sec .accordion-button{
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 700;
     padding: 28px 30px 28px 0;
 }
 .learn-more-about-sec .accordion-body{
@@ -1121,19 +1128,88 @@ a {
 }
 
 
-
+/* =======================================================================
+    Sub Page Banner CSS
+========================================================================== */
+.sub-page-banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('https://www.realmeal.ae/assets/images/realmeal/real-meal-plans.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 250px;
+}
+.sub-page-banner .page-title{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.sub-page-banner .bread-crumbs .prev{
+    color: var(--white);
+    font-size: 16px;
+    margin-right: 10px;
+}
+.sub-page-banner .bread-crumbs .prev:hover{
+    text-decoration: underline;
+}
+.sub-page-banner .bread-crumbs .angle{
+    color: var(--white);
+    font-size: 16px;
+    margin-right: 10px;
+}
+.sub-page-banner .bread-crumbs .current{
+    color: var(--white);
+    font-size: 16px;
+    margin-right: 10px;
+}
 
 
 /* =======================================================================
     About Page CSS
 ========================================================================== */
 .about-us-content-sec{
-    padding: 70px 0 40px 0;
+    padding: 100px 0 70px 0;
+}
+.about-us-content-sec.with-img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.realmeal.ae/assets/images/realmeal/package/video-thumbnail.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.about-us-content-sec .bg-set{
+    background-color: rgba(21, 21, 21, 0.7);
+    border-radius: 30px;
+    padding: 40px 40px;
+}
+.about-us-content-sec.with-img .section-heading h2,
+.about-us-content-sec.with-img .text,
+.about-us-content-sec.with-img .mission-item .desc{
+    color: var(--white);
+    text-align: center;
+}
+.about-us-content-sec.with-img .mission-item{
+    background-color: var(--black);
+}
+.about-us-content-sec.with-img .mission-item:hover{
+    transform: translateY(-10px);
+    border: 2px solid var(--green);
+    background-color: #fff;
+    box-shadow: 0px 15px 55px rgba(34, 34, 34, 0.15);
+}
+.about-us-content-sec.with-img .mission-item:hover .desc{
+    color: var(--black);
+}
+.about-us-content-sec img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
 .about-us-content-sec .text{
     font-size: 16px;
     color: var(--black);
-    text-align: center;
     margin-bottom: 30px;
     line-height: 28px;
 }
@@ -1198,14 +1274,14 @@ a {
     color: var(--black);
 }
 .about-last-sec{
-    padding: 0px 0 50px 0;
+    padding: 50px 0 50px 0;
 }
 .about-last-sec .text{
     font-size: 18px;
     font-weight: 600;
     color: var(--black);
     margin-bottom: 50px;
-    text-align: center;
+    /* text-align: center; */
 }
 .about-last-sec img{
     width: 100%;
@@ -1217,7 +1293,9 @@ a {
 
 
 
-
+/* =======================================================================
+    Blog Page CSS
+========================================================================== */
 .blog-item.vertical{
     display: block;
     margin: 0;
