@@ -81,7 +81,7 @@ $('#customer-reviews-slider').owlCarousel({
       items: 1,
     },
     410: {
-      items: 2,
+      items: 1,
     },
     600: {
       items: 3,
