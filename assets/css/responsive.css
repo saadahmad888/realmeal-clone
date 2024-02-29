@@ -104,4 +104,14 @@
     #customer-reviews-slider .owl-dot:hover span{
         background: var(--black);
     }
+    .floating-wahtsapp-btn{
+        bottom: 30px;
+        right: 30px;
+    }
+    .floating-wahtsapp-btn img{
+        width: 50px;
+    }
+    .meal-plan-item .img-box img{
+        height: 380px;
+    }
 }

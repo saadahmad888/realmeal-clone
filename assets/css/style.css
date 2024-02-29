@@ -388,6 +388,7 @@ a {
     text-align: center;
     margin-bottom: 0;
     transition: 0.3s all ease;
+    min-height: 50px;
 }
 .top-picks-item:hover .title{
     letter-spacing: 1px;
@@ -566,6 +567,11 @@ a {
     font-size: 16px;
     line-height: 28px;
     margin-bottom: 30px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .review-item .img-box{
     margin-right: 7px;
@@ -1630,4 +1636,27 @@ a {
 .catering-contact-sec .contact-box .text:hover{
     letter-spacing: 1px;
     text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+/* =======================================================================
+    Floating WhatsApp Button CSS
+========================================================================== */
+.floating-wahtsapp-btn{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 99999;
+}
+.floating-wahtsapp-btn img{
+    width: 80px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }

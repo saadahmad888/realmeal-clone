@@ -2,8 +2,31 @@
 <html lang="en">
 <head>
 <meta name="viewport" content="width = 1050, user-scalable = no" />
+<!-- Fav Icon -->
+<link rel="shortcut icon" href="https://www.realmeal.ae/assets/images/realmeal/favicon.ico" type="image/x-icon">
 <script type="text/javascript" src="assets/extras/jquery.min.1.7.js"></script>
 <script type="text/javascript" src="assets/extras/modernizr.2.5.3.min.js"></script>
+<style>
+	.btn-box{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 55%;
+		left: -20px;
+	}
+	.nav-arrow {
+		width: 40px;
+		height: 40px;
+		background-color: rgba(255, 255, 255, 0.5);
+		color: black;
+		font-size: 24px;
+		/* text-align: center; */
+		line-height: 40px;
+		cursor: pointer;
+	}
+
+</style>
 </head>
 <body>
 
@@ -57,6 +80,12 @@
 			<div style="background-image:url(assets/pages/beyond-catering_page-0040.jpg)"></div>
 			<div style="background-image:url(assets/pages/beyond-catering_page-0041.jpg)"></div>
 			<div style="background-image:url(assets/pages/beyond-catering_page-0042.jpg)"></div>
+			
+		</div>
+		<!-- Arrows for navigation -->
+		<div class="btn-box">
+			<div id="prevPage" class="nav-arrow">&#10094;</div>
+			<div id="nextPage" class="nav-arrow">&#10095;</div>
 		</div>
 	</div>
 </div>
@@ -90,6 +119,7 @@ function loadApp() {
 			autoCenter: true
 
 	});
+
 }
 
 // Load the HTML4 version if there's not CSS transform
@@ -102,6 +132,19 @@ yepnope({
 	complete: loadApp
 });
 
+</script>
+
+<script>
+	$(document).ready(function() {  
+	// Event handlers for navigation arrows
+	$('#prevPage').click(function() {
+	  $('.flipbook').turn('previous');
+	});
+  
+	$('#nextPage').click(function() {
+	  $('.flipbook').turn('next');
+	});
+  });
 </script>
 
 </body>
